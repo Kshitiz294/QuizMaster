@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuizMaster</string>
+    <string name="action_settings">Settings</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="go_discoverable">Go Discoverable</string>
+    <string name="search_devices">Search Devices</string>
+    <string name="network_lobby">Network Lobby</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Questions Textview"
+        android:id="@+id/questions_textview"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/questions_textview"
+        android:layout_centerHorizontal="true">
+
+        //First Row
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            //First Column (R1C1)
+            <Button
+                android:id="@+id/topLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:width="170dp"
+                android:height="100dp"
+                android:maxLines="2"
+                android:layout_margin="5dp" />
+
+            //Second Column (R1C2)
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:width="170dp"
+                android:height="100dp"
+                android:layout_margin="5dp" />
+        </TableRow>
+
+        //Second Row
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            //First Column (R2C1)
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:width="170dp"
+                android:height="100dp"
+                android:layout_margin="5dp" />
+
+            //Second Column (R2C2)
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:width="170dp"
+                android:height="100dp"
+                android:layout_margin="5dp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="temp"
+        android:id="@+id/temp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/network_lobby"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:id="@+id/network_textview"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@id/network_textview"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/button_layout"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/discovery"
+            android:text="@string/go_discoverable"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/search"
+            android:text="@string/search_devices"/>
+    </LinearLayout>
+
+</RelativeLayout>
